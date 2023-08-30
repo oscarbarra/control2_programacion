@@ -88,7 +88,6 @@ u1.registarUsuario()
 
 u1.conexionCatalogo()
 u1.conexionPrestamo()
-u1.conexionLibro()
 
 u1.agregarLibro("agatha christie", "muerte en el nilo")
 u1.agregarLibro("antoine de saint-exupéry", "el principito")
