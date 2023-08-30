@@ -45,6 +45,8 @@ class Prestamo(Catalogo):
         if self.libroDisponible(autor, nombre) == 1:
             self.p1.historialUsuario(autor, nombre)
             self.c1.catalogo[autor][nombre] = "no disponible"
+        else:
+            print("libro no disponible")
 
     def devolverLibro(self, autor, nombre):
         key = list(self.c1.catalogo[autor]) #el diccionario lo paso a lista
