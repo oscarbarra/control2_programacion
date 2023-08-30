@@ -30,7 +30,7 @@ class Catalogo:
     
     def libroDisponible(self, autor, nombre):
         if self.c1.catalogo[autor][nombre] == "disponible":
-            print(f"el libro {nombre} se encontraba disponible, asi que tienes un mes para leer")
+            print(f"el libro {nombre} se encuentra disponible, por lo que temporalmente es tuyo")
             return 1
 
     def mostrarCatalogo(self):
@@ -97,7 +97,7 @@ u1.mostrarCatalogo()
 u1.eliminarLibro("antoine de saint-exupéry", "el principito")
 u1.mostrarCatalogo()
 
-u1.prestarLibro("agatha christie", "muerte en el nilo")
+u1.prestarLibro(input("nombre del autor:  "), input("nombre del libro:  "))
 #u1.prestarLibro("antoine de saint-exupéry", "el principito")
 
 u1.verHistorial()
