@@ -100,10 +100,13 @@ u1.eliminarLibro("antoine de saint-exupéry", "el principito")
 u1.mostrarCatalogo()
 
 u1.prestarLibro(input("nombre del autor:  "), input("nombre del libro:  "))
-#u1.prestarLibro("antoine de saint-exupéry", "el principito")
+#u1.prestarLibro(input("nombre del autor:  "), input("nombre del libro:  "))
 
 u1.verHistorial()
 u1.mostrarCatalogo()
 
+input("presionar ENTER para devolver el libro")
+
 u1.devolverLibro("agatha christie", "muerte en el nilo")
+#u1.devolverLibro("antoine de saint-exupéry", "el principito")
 u1.mostrarCatalogo()
